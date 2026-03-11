@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chater Airways | Quietly Refined</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600&display=swap');
+    body { font-family: 'Inter', system_ui, sans-serif; }
+    .heading { font-family: 'Playfair Display', serif; }
+    .hero-bg { background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('https://images.pexels.com/photos/31747108/pexels-photo-31747108.jpeg'); background-size: cover; background-position: center; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+  <!-- NAVBAR -->
+  <nav class="fixed top-0 w-full bg-zinc-950/90 backdrop-blur-md z-50 border-b border-zinc-800">
+    <div class="max-w-7xl mx-auto px-8 py-5 flex justify-between items-center">
+      <div class="flex items-center gap-x-3">
+        <img src="images/logo-maroon.png" alt="Chater Airways" class="h-9">
+      </div>
+      <div class="hidden md:flex items-center gap-x-10 text-sm font-medium tracking-widest">
+        <a href="#fleet" class="hover:text-rose-700 transition">Fleet</a>
+        <a href="#destinations" class="hover:text-rose-700 transition">Destinations</a>
+        <a href="#experience" class="hover:text-rose-700 transition">The Experience</a>
+        <a href="#stopover" class="hover:text-rose-700 transition">Chater Stopover</a>
+      </div>
+      <a href="#book" class="bg-rose-800 hover:bg-rose-700 transition px-8 py-3 text-sm font-medium tracking-widest">Enquire Now</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero-bg h-screen flex items-center justify-center text-center relative">
+    <div class="max-w-3xl px-6">
+      <img src="images/logo-white.png" alt="Chater Airways" class="mx-auto h-16 mb-6 opacity-90">
+      <h1 class="heading text-7xl md:text-8xl tracking-tighter mb-4">Quietly Refined</h1>
+      <p class="text-2xl text-zinc-300 mb-12">Hong Kong International Airport to the Taiwan Strait</p>
+      <div class="flex flex-col sm:flex-row gap-6 justify-center">
+        <a href="#fleet" class="bg-white text-zinc-950 px-12 py-5 font-medium text-lg hover:bg-zinc-100 transition">Discover Our Fleet</a>
+        <a href="#stopover" class="border border-white/70 px-12 py-5 font-medium text-lg hover:bg-white/10 transition">Learn About Chater Stopover</a>
+      </div>
+    </div>
+    <div class="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center">
+      <div class="text-xs tracking-[4px] mb-2">SCROLL TO BEGIN YOUR JOURNEY</div>
+      <i class="fa-solid fa-chevron-down animate-bounce"></i>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="max-w-5xl mx-auto px-8 py-32 text-center">
+    <h2 class="heading text-5xl mb-8">A New Kind of Travel</h2>
+    <div class="prose prose-invert mx-auto text-lg leading-relaxed max-w-2xl">
+      <p>Founded in 2026 and operating exclusively on the GeoFS simulation platform, Chater Airways is Hong Kong’s newest regional virtual airline. Named for Sir Paul Chater, we carry forward his legacy of connection and development with every thoughtful detail.</p>
+      <p>From our hub at Hong Kong International Airport (VHHH) we serve Kaohsiung (RCKH), Taipei (RCTP), and Xiamen (ZSAM). Our signature product, Chater Stopover, invites travellers to experience Hong Kong for up to seven days at no extra airfare — two cities for the price of one.</p>
+    </div>
+  </section>
+
+  <!-- FLEET -->
+  <section id="fleet" class="bg-zinc-900 py-32">
+    <div class="max-w-7xl mx-auto px-8">
+      <div class="text-center mb-16">
+        <div class="uppercase tracking-widest text-rose-700 text-sm mb-3">Our Fleet</div>
+        <h2 class="heading text-6xl">Thoughtfully Configured</h2>
+      </div>
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- A320neo -->
+        <div class="bg-zinc-950 border border-zinc-800 overflow-hidden group">
+          <img src="images/a320neo.jpg" alt="B-HCA Victoria Harbour" class="w-full h-80 object-cover transition group-hover:scale-105">
+          <div class="p-10">
+            <div class="flex justify-between items-baseline mb-6">
+              <div>
+                <div class="text-3xl font-medium">B-HCA “Victoria Harbour”</div>
+                <div class="text-sm text-zinc-500">Airbus A320neo • 150 seats</div>
+              </div>
+              <div class="text-right">
+                <div class="text-xs uppercase">In service</div>
+              </div>
+            </div>
+            <div class="grid grid-cols-2 gap-8 text-sm">
+              <div>Business Class: 38 seats (2-2, 38" pitch)<br>Economy: 112 seats (3-3, 30" pitch)</div>
+              <div>Named after Hong Kong’s iconic harbour. The flagship of quiet refinement.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second A320neo -->
+        <div class="bg-zinc-950 border border-zinc-800 overflow-hidden group">
+          <img src="images/a320neo.jpg" alt="B-HCB The Peak" class="w-full h-80 object-cover transition group-hover:scale-105">
+          <div class="p-10">
+            <div class="flex justify-between items-baseline mb-6">
+              <div>
+                <div class="text-3xl font-medium">B-HCB “The Peak”</div>
+                <div class="text-sm text-zinc-500">Airbus A320neo • 150 seats</div>
+              </div>
+              <div class="text-right">
+                <div class="text-xs uppercase">In service</div>
+              </div>
+            </div>
+            <div class="grid grid-cols-2 gap-8 text-sm">
+              <div>Business Class: 38 seats (2-2, 38" pitch)<br>Economy: 112 seats (3-3, 30" pitch)</div>
+              <div>Named after Hong Kong’s highest point. Elevated comfort at every altitude.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Upcoming 737 -->
+        <div class="bg-zinc-950 border border-zinc-800 overflow-hidden group md:col-span-2">
+          <div class="grid md:grid-cols-2">
+            <img src="images/b737-800.jpg" alt="B-CCD Lantau" class="w-full h-80 object-cover">
+            <div class="p-12 flex flex-col justify-center">
+              <div class="uppercase text-rose-700 text-xs mb-3">Joining 2027</div>
+              <div class="text-4xl font-medium mb-6">Boeing 737-800<br>B-CCD “Lantau” &amp; B-CCE “Kowloon”</div>
+              <p class="text-zinc-400">Pre-ordered aircraft will expand our regional network with the same dual-class premium configuration and signature Chater service.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DESTINATIONS -->
+  <section id="destinations" class="max-w-7xl mx-auto px-8 py-32">
+    <div class="text-center mb-16">
+      <div class="uppercase tracking-widest text-rose-700 text-sm mb-3">Three Cities, One Spirit</div>
+      <h2 class="heading text-6xl">Our Routes</h2>
+    </div>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="border border-zinc-800 p-8 hover:border-rose-700 transition">
+        <div class="text-3xl font-medium mb-2">Kaohsiung (RCKH)</div>
+        <div class="text-zinc-400">Taiwan’s southern gateway. Night markets, love river, and warm hospitality.</div>
+      </div>
+      <div class="border border-zinc-800 p-8 hover:border-rose-700 transition">
+        <div class="text-3xl font-medium mb-2">Taipei (RCTP)</div>
+        <div class="text-zinc-400">Taiwan’s vibrant capital. Modern energy meets centuries of culture.</div>
+      </div>
+      <div class="border border-zinc-800 p-8 hover:border-rose-700 transition">
+        <div class="text-3xl font-medium mb-2">Xiamen (ZSAM)</div>
+        <div class="text-zinc-400">China’s coastal gem. Historic islands, gardens, and Fujian charm.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="bg-zinc-900 py-32">
+    <div class="max-w-7xl mx-auto px-8">
+      <h2 class="heading text-6xl text-center mb-20">The Chater Experience</h2>
+      <div class="grid md:grid-cols-2 gap-20">
+        <!-- Business -->
+        <div>
+          <img src="https://images.pexels.com/photos/ (business-cabin-reference)" alt="Business Class" class="rounded-xl mb-8 w-full">
+          <div class="text-rose-700 text-sm font-medium tracking-widest mb-4">38 SEATS • 2-2 LAYOUT • 38" PITCH</div>
+          <h3 class="text-4xl mb-6">Business Class</h3>
+          <p class="text-zinc-400 leading-relaxed">Reclining leather seats with ample space, dedicated service, and the quiet luxury of knowing every detail has been considered. Perfect for the discerning traveller who values refinement over ostentation.</p>
+        </div>
+        <!-- Economy -->
+        <div>
+          <img src="https://images.pexels.com/photos/ (economy-cabin-reference)" alt="Economy Class" class="rounded-xl mb-8 w-full">
+          <div class="text-rose-700 text-sm font-medium tracking-widest mb-4">112 SEATS • 3-3 LAYOUT • 30" PITCH</div>
+          <h3 class="text-4xl mb-6">Economy Class</h3>
+          <p class="text-zinc-400 leading-relaxed">Generous legroom, thoughtful amenities, and service delivered with the same quiet care as our Business cabin. Because comfort should never be compromised, regardless of class.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHATER STOPOVER -->
+  <section id="stopover" class="max-w-5xl mx-auto px-8 py-32 text-center">
+    <div class="max-w-2xl mx-auto">
+      <div class="uppercase text-rose-700 text-sm tracking-widest mb-6">Signature Product</div>
+      <h2 class="heading text-6xl mb-10">Chater Stopover</h2>
+      <p class="text-2xl text-zinc-300 leading-relaxed">Stay in Hong Kong for up to seven days at no extra airfare. Experience the Peak at dawn, dim sum in Central, the Star Ferry at dusk, and the night markets of Temple Street — then continue seamlessly to your onward destination.</p>
+      <div class="mt-12 inline-block bg-zinc-800 px-10 py-6 text-sm">Two cities. One ticket. Endless possibility.</div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-black py-20 border-t border-zinc-900">
+    <div class="max-w-7xl mx-auto px-8 grid md:grid-cols-3 gap-12">
+      <div>
+        <img src="images/logo-maroon.png" alt="Chater Airways" class="h-8 mb-8">
+        <p class="text-xs text-zinc-500">A subsidiary of Pacific Holdings Limited<br>Hong Kong • 2026</p>
+      </div>
+      <div class="text-sm space-y-4">
+        <div class="font-medium text-zinc-400">Chater Airways • Chater Technical Services • Chater Catering</div>
+        <div class="text-xs leading-loose text-zinc-500">Virtual operations on GeoFS<br>All flights simulated • Real refinement</div>
+      </div>
+      <div class="text-right text-xs text-zinc-500">
+        © 2026 Chater Airways. All rights reserved.<br>
+        Quietly connecting Hong Kong to the world.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    tailwind.config = { content: ["*"], theme: { extend: { colors: { rose: { 700: "#9F1239", 800: "#881337" } } } } }
+  </script>
+</body>
+</html>
